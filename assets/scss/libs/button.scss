@@ -1,0 +1,97 @@
+.button {
+    margin: 0;
+    font: inherit;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: $color_black;
+    z-index: 1;
+    position: relative;
+    border: 2px solid $color_green;
+    box-sizing: border-box;
+    filter: drop-shadow(-15px 4px 20px rgba(0, 0, 0, 0.12));
+    border-radius: 30px;
+    background-color: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    min-width: 195px;
+    padding: 10px;
+    height: 40px;
+
+    @media (min-width: 1024px) {
+        min-width: 273px;
+        height: 49px;
+        padding: 10px 20px;
+        font-size: 24px;
+    }
+
+
+    &:not(:disabled) {
+        cursor: pointer;
+    }
+
+    &:hover {}
+}
+
+.button--small {
+    min-width: 83px;
+    height: 40px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.button--inverse {
+    box-shadow: -15px 4px 20px rgba(0, 0, 0, 0.12);
+    border-radius: 25px;
+    background-color: $color_greenDark;
+    min-width: 160px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: $color_white;
+    border-color: $color_greenDark;
+}
+
+.button--light {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    height: 40px;
+}
+
+.slick-arrow {
+    font-size: 0;
+    background-image: url(../img/arrow-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+    border: none;
+    background-color: inherit;
+    width: 20px;
+    height: 20px;
+    top: 49%;
+    left: 101%;
+    position: absolute;
+    transform: translate(0, -50%);
+}
+
+.slick-prev {
+    transform: rotate(180deg) translate(0, -50%);
+    left: -23px;
+    top: 40%;
+}
