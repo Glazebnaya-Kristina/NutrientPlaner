@@ -118,8 +118,12 @@ h1 {
     line-height: 31px;
 
     @media (min-width: 1024px) {
-        font-style: normal;
         font-weight: 500;
+        font-size: 34px;
+        line-height: 38px;
+    }
+
+    @media (min-width: 1400px) {
         font-size: 45px;
         line-height: 54px;
     }
