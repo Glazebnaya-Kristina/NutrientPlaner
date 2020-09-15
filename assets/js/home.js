@@ -129,17 +129,7 @@ $(document).ready(function () {
     autoplay: true,
     cssEase: 'linear',
     dots: true,
-    appendDots: ".reviews__heading-dots",
-    responsive: [{
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        variableWidth: false,
-        fade: true,
-        adaptiveHeight: true,
-      }
-    }]
+    appendDots: ".reviews__heading-dots"
   })
 
   //partners__carousel
@@ -163,7 +153,7 @@ $(document).ready(function () {
     focusOnSelect: true,
     variableWidth: true,
     autoplaySpeed: 5000,
-    // autoplay: true,
+    autoplay: true,
     cssEase: 'linear',
     dots: true,
     appendDots: ".faq__heading-dots",
