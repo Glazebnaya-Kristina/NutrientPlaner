@@ -57,13 +57,17 @@
     box-shadow: -15px 4px 20px rgba(0, 0, 0, 0.12);
     border-radius: 25px;
     background-color: $color_greenDark;
-    min-width: 160px;
+    min-width: 150px;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
     color: $color_white;
     border-color: $color_greenDark;
+
+    @media (min-width: 1024px) {
+        min-width: 160px;
+    }
 }
 
 .button--light {
@@ -71,7 +75,11 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
-    height: 40px;
+    height: 33px;
+
+    @media (min-width: 1024px) {
+        height: 40px;
+    }
 }
 
 .button--question {
@@ -124,4 +132,36 @@
     transform: rotate(180deg) translate(0, -50%);
     left: -23px;
     top: 40%;
+}
+
+.slick-dots {
+    display: flex;
+
+    li {
+        border: 3px solid $color_green;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        margin: 5px 3px;
+
+        @media (min-width: 768px) {
+            margin: 5px;
+            width: 18px;
+            height: 18px;
+        }
+
+        button {
+            font-size: 0;
+            background-color: inherit;
+            border: none;
+        }
+    }
+
+    .slick-active {
+        background-color: $color_green;
+    }
 }
